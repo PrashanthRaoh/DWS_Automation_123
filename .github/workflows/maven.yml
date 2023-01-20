@@ -10,14 +10,15 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ master ]
+    branches: [ "master" ]
 jobs:
   build:
     runs-on: windows-latest
 
     steps:
-      - name: Step 1 Checkout master branch
-      - uses: actions/checkout@v3
+       - uses: actions/checkout@v3
+       - name: Step 1 Checkout master branch
+         
      
-      - name: Build and run with Maven
-        run: mvn -B package --file pom.xml
+       - name: Build and run with Maven
+         run: mvn -B package --file pom.xml
