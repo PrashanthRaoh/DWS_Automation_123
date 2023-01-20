@@ -23,5 +23,3 @@ jobs:
      
       - name: Build and run with Maven
         run: mvn -B package --file pom.xml
-
-   
