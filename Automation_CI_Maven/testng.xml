@@ -5,6 +5,7 @@
     <classes>
       <class name="test.Automation_CI_Maven.AppTest"/>
       <class name="test.Automation_CI_Maven.SampleTest"/>
+      <class name="test.Automation_CI_Maven.LoginTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
