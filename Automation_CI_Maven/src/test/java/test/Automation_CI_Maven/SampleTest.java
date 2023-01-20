@@ -23,7 +23,7 @@ public class SampleTest {
 		driver.findElement(By.id("small-searchterms")).sendKeys("Books");
 		driver.findElement(By.xpath("(//input[@type='submit'])[1]")).click();
 		driver.close();
-		System.out.println(" Test Case Completed");
+		System.out.println("Search Test Case Completed");
 	}
 
 }
