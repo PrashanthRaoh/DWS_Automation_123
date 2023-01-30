@@ -25,12 +25,3 @@ jobs:
      
        - name: Build and run with Maven
          run: mvn -B package --file Automation_CI_Maven/pom.xml
-       
-       - name: Upload Selenium reports
-         run: |
-            mkdir -p selenium-reports
-            cp target/surefire-reports/emailable-report.html selenium-reports/
-            cd selenium-reports
-            git add selenium-reports
-            git commit -m "Add Selenium reports"
-            git push
