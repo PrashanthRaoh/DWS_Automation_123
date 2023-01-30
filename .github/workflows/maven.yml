@@ -29,7 +29,8 @@ jobs:
        - name: Upload Selenium reports
          run: |
             mkdir -p selenium-reports
-            mv target/surefire-reports selenium-reports/
+            cp target/surefire-reports/emailable-report.html selenium-reports/
+            cd selenium-reports
             git add selenium-reports
             git commit -m "Add Selenium reports"
             git push
