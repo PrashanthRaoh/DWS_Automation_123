@@ -25,3 +25,10 @@ jobs:
      
        - name: Build and run with Maven
          run: mvn -B package --file Automation_CI_Maven/pom.xml
+       
+       - name: Test Reporter
+         uses: dorny/test-reporter@v1.4.3
+         with:
+          name: Run Tests
+          path: "**/surefire-reports/TEST-*.xml"
+          reporter: java-junit
