@@ -9,11 +9,11 @@ import org.testng.annotations.Test;
 
 
 
-public class SampleTest {
+public class SearchTest {
 	
 	
 	@Test
-	public void Search() {
+	public void Demo() {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");		
 		//Launch the chrome browser
 		WebDriver driver=new ChromeDriver();
@@ -23,7 +23,7 @@ public class SampleTest {
 		driver.findElement(By.id("small-searchterms")).sendKeys("Books");
 		driver.findElement(By.xpath("(//input[@type='submit'])[1]")).click();
 		driver.close();
-		System.out.println("Completed");
+		System.out.println("Updated Search Test Case ");
 		
 	}
 
